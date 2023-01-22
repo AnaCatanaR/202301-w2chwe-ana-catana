@@ -1,17 +1,20 @@
 class Cell {
-  lifeState = false;
-  color = "white";
-  position;
+  positionX;
+  positionY;
+  lifeState;
 
-  constructor(lifeState, color, position) {
+  constructor(positionX, positionY, lifeState = false) {
+    this.positionX = positionX;
+    this.positionY = positionY;
     this.lifeState = lifeState;
-    this.color = color;
-    this.position = position;
   }
 
-  print(life) {
-    this.lifeState = life;
-    this.color = "red";
+  alive() {
+    this.lifeState = true;
+  }
+
+  dead() {
+    this.lifeState = false;
   }
 }
 

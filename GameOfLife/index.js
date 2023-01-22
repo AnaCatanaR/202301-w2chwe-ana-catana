@@ -1,3 +1,3 @@
-const a = 3;
+import createBoard from "./javascript/functions/createBoard.js";
 
-console.table(a);
+createBoard(3, 7);
