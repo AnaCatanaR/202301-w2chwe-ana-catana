@@ -1,4 +1,4 @@
-import Cell from "../Classes/Cell.js";
+import Cell from "../Classes/CreateCell.js";
 
 const createBoard = (gridRows, gridColums) => {
   const newBoard = [];
